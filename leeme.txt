@@ -1,0 +1,6 @@
+CREATE ROLE clinica_app
+WITH LOGIN PASSWORD 'Cl1n1c4$2026';
+
+CREATE DATABASE clinica_citas
+OWNER clinica_app;
+
