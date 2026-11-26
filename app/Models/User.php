@@ -58,4 +58,9 @@ class User extends Authenticatable implements MustVerifyEmail
             ? Str::substr($initials, 0, 1).Str::substr($initials, -1)
             : $initials;
     }
+
+    public function patient(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Patient::class);
+    }
 }

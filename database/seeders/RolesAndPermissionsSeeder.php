@@ -34,6 +34,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'usuarios.gestionar',
             'pacientes.ver',
             'pacientes.crear',
+            'pacientes.editar',
             'medicos.gestionar',
             'horarios.gestionar',
             'citas.ver',
@@ -58,6 +59,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'recepcionista' => [
                 'pacientes.ver',
                 'pacientes.crear',
+                'pacientes.editar',
                 'citas.ver',
                 'citas.crear',
                 'citas.reprogramar',
